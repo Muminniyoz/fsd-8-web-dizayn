@@ -1,0 +1,59 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+.container{
+    box-shadow: 1px 1px 9px 2px gray;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+}
+.container h1 {
+    text-align: center;
+}
+form{
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+label{
+    font-size: 24px;
+}
+input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid dodgerblue;
+    transition: all 0.4s;
+}
+input:focus{
+    border-bottom: 2px solid rgb(6, 34, 63);
+
+}
+button{
+    background-color: dodgerblue;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 8px 2px gray;
+    width: 100%;
+    font-size: 24px;
+    color: white;
+}
+button:active{
+    box-shadow: 1px 1px 8px 1px black;
+
+}

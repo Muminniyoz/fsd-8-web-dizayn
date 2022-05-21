@@ -1,0 +1,121 @@
+O'lchovlar
+
+em - joriy elementning font razmeri nisbatida
+
+font-size: 24px;
+margin-top: 2em; // 48px
+
+rem - Bosh element body, html larning font-size 
+qiymati bo'yicha
+body {
+ font-size: 16px;
+}
+div {
+  font-size: 2rem; // 32px
+}
+
+vw - brouzer kengligining 1% dir. Agar brouzer 1000px 
+bo'lsa 1vw = 10px bo'ladi.
+div {
+    width: 20vw;
+}
+
+vh - brauzer buyining 1% i bo'yicha.
+height: 10vh;
+
+
+
+CSSda media so'rovlar.
+
+Turli holatlarga turlicha CSS kod yozish uchun media so'rovlar 
+dan foydalanildi.
+Holatlar: 
+print - sahifani printerda chiqarish
+screen - ekran razmerining uzgarishi
+speech - ekran skanneri
+all - hammasi
+
+Sintaksis
+@media <tur> and (<shart>){
+    ... CSS kodlari
+}
+
+Misol: 
+@media print{
+    h1 {
+        color: red;
+    }
+}
+
+
+Responsive Layout - Moslashuvchan sahifalar
+
+Ekranning turli xil hajmlarida turlicha ko'rinishdagi 
+web sahifalar  Responsive web page (Moslashuvchan sahifa) 
+deyiladi.
+
+Bunday sahifalar yaratish uchun media so'rov ishlatiladi.
+Sintaksis
+@media screen and (<shart>){
+    ... CSS kod.
+}
+
+Asosan <shart> ga max-width yoki min-width beriladi.
+
+max-width - berilsa ko'rsatilgan o'lchamgacha amal qiladi.
+ya'ni ko'rsatilgan o'lchamdan kichiklariga amal qiladi.
+
+min-width - berilsa ko'rsatilgan o'lchadan katta bo'lganlarga
+amal qiladi.
+
+
+Misol: 
+@media screen and (max-width: 900px){
+    900px dan kichiklarda amal qiladi.
+}
+
+@media screen and (min-width: 700px){
+    700px dan kattalarda amal qiladi.
+}
+
+Sahifani Moslashuvchan qilishda ulardan bir tanlanadi va 
+razmerlar ketma ket yoziladi.
+
+Ikki xil usul mavjud.
+1. sahifa kichik ekrandan katta ekranlarga qarab yaratiladi.
+Munda min-width ishlatiladi va media so'rovlar razmerlari 
+o'sish tartibida bo'ladi.
+Misol: 
+1. eng kichik uchun odatiy CSS 
+2. @media screen and (min-width: 600px){
+    600px dan yuqori uchun
+}
+3. @media screen and(min-width: 900px){
+    900px dan yuqorilar uchun
+}
+va h.k.
+
+2. Dastlab sahifa katta razmerlar uchun tayyorlanadi so'ng 
+qadamma qadam kichik razmerlar uchun media yoziladi.
+Bu usulda max-widht dan foydalaniladi va razmerlar kamayish 
+tartibida bo'ladi.
+
+Masalan: 
+1. Katta hajm uchun asosiy CSS 
+2. @media screen and (max-width: 900px){
+    900px dan kichik bo'lganda CSS 
+}
+3. @media screen and (max-width: 600px){
+    600px dan kichik bo'lganda CSS 
+}
+va h.k
+
+Hozirgi kunda dasturchilar asosan quidagicha
+ekranni razmerlarga bo'lishadi
+
+1. 0px - 576px - telefonni tik holati 
+2. 576px - 768px  - telefonni yotgan holati 
+3. 768px  - 992px - planshet
+4. 992px - 1200px - noutbuk
+5. 1200px - * yoki (1440px) - desktop va katta hajmlar.
+

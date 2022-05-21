@@ -1,0 +1,135 @@
+div va span
+
+HTMLda faqatgina kontener (o'zida saqlovchi) 
+vazifasini bajaruvchi div va span elementlari
+mavjud. Bu ikki element hech qanday qo'shimcha
+xususiyatlarga ega emas.
+div - block element
+span - inline element 
+
+Background - orqa fon
+
+Element orqa fonda stil berish uchun background 
+xususiyatidan foydalaniladi.
+
+Orqa fonga rasm va rang berish mumkin
+background-color - orqa fonga rang berish
+background-image - orqa fonga rasm berish
+Qiymati: url("rasm manzili")
+Misol:
+background-image: url("./rasm.jpg");
+
+background-size - orqa fonga o'lcham berish
+Qiymatlari:
+cover - to'ldirish
+auto - rasm o'lchami bo'yicha
+contain - element ichiga moslashish
+bundan tashqari px, foiz, va h.k kabi o'lchamlarda 
+ikkita qiymat berish mumkin, biri eni bo'lsa ikkinchisi bo'yi
+Misol:
+background-size: 300px 400px;
+
+Agar rasm o'lchami kichik bo'lsa  u takrorlanib qoladi.
+Takrorlanishni boshqarish uchun background-repeat xususiyatidan
+foydalaniladi.
+
+Qiymatlari:
+
+no-repeat - takrorlanmaslik
+repeat - takrorlanish
+repeat-x - gorizontal takorlanish
+repeat-y - vertikal takrorlanish
+
+
+background-position - orqa fonni joylashtirish uchun ishlatiladi.
+Qiymatlari: Birdaniga ikkita yunalish buyicha qiymat beriladi.
+1 - yunalish gorizontaliga:
+left - chap, center - markaz, right - o'ng
+2 - yunalish vertikaliga
+top - tepa, center - markaz, bottom - past
+
+Misol:
+background-position: left center;
+
+Agar orqa fonni ko'rsatilgan qiymatlarga joylashtirish kerak
+bo'lsa yuqori chap burchak asos qilinib px, foiz va h.k lardan
+qiymat beriladi.
+Misol:
+background-position: 200px 200px;
+chap yuqori burchakdan 200px o'ngga va 200px pastga
+
+
+background-attachment - orqa fon rasmni qotirib qo'yish 
+uchun ishlatiladi. 
+Misol:
+background-attachment: fixed;
+
+Border - Chegara
+
+Element chegarasiga rang berish uchun border xususiyatidan
+foydalaniladi.
+
+1. border-style - chegara turi.
+Qiymatlari:
+solid - uzluksiz chiziq
+dashed - uzlukli chiziq
+dotted - nuqtali 
+va h.k
+
+2. border-width - chegara eni
+Qiymati: px, foiz va h.k
+border-width: 3px;
+
+3. border-color - chegara rangi
+
+Bu uchala xususiyatni bittada yozish mumkin:
+border: solid 3px red;
+
+Maxsus tomonga chegar qo'yish:
+border-top - yuqori chegara
+border-left - chap
+border-right - o'ng
+border-bottom - past
+Misol:
+border-bottom: solid 2px blue;
+
+
+BOX MODEL
+
+HTMLda barcha elementlar turtburchak shaklda bo'ladi(box).
+Elementga enini berish uchun width xususiyatidan foydalaniladi, 
+buy berish uchun esa height xususiyatidan foydalaniladi.
+Misol:
+width: 300px;
+height: 300px;
+
+Elementni boshqa elementlardan masofa saqlashligi uchun margin
+xususiyatidan foydalaniladi.
+Misol:
+margin: 10px;
+margin-left - chap tomondan masofa
+margin-right - o'ng
+margin-bottom - past
+margin-top - tepadan
+
+Eslatma: inline elementlar widht, height va margin
+ xususiyatlarini olmaydi. Suning uchun inline o'rninga
+  inline-block ishlatiladi.
+span{
+    widht: 200px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+
+chegara va content orasidagi masofani berish uchun padding 
+xususiyatidan foydalaniladi.
+padding: 10px;
+padding-top - tepa
+padding-right -o'ng
+padding-left - chap
+padding-bottom - past
+
+elementga padding berilganda u kattalashib keta boshlaydi,
+paddingni ichkaridan olish uchun 
+box-sizing: border-box; xususiyatini berib qo'yish kerak.

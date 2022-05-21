@@ -1,0 +1,39 @@
+Flex items
+
+Flex Container ichidagi elementlar Flex items deyiladi va 
+ular uchun quidagi xususiyatlar mavjud.
+
+1. order - elementlar tartibini o'zgartirish
+Qiymati tartib raqam.
+Misol: 
+order: 2;
+
+2. flex-grow - kenglikni elementlar orasida nisbatda bo'lish.
+Qiymati nisbat sonlar;
+Misol: 
+flex-grow: 2;
+Agar bir qatordagi elementlarga bir xil flex-grow berilsa 
+ular teng taqsimlanadi.
+
+3. flex-shrink - Container o'lchami o'zgarganda biror elementlarga 
+siqilmaslik uchun ustunlik berish.
+Qiymati:
+1 - siqilish 
+0 - siqilmaslik.
+
+4. flex-basis - elementlarga dastlabki ulchamni berish.
+Qiymati: px, foiz va h.k.
+Misol: 
+flex-basis: 200px;
+
+5. flex - 3 xususiyat flex-grow, flex-shrink va flex-basis 
+ni bitta qatorda berish.
+Misol:
+flex: 1 1 200px;
+
+
+6. align-self - Containerning align-items xususiyatini tayin 
+bitta elementga berish.
+align-self: center;
+
+

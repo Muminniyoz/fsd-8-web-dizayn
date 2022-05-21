@@ -1,0 +1,54 @@
+FlexBox
+
+CSSda float va position xususiyatlaridan foydalanilmagan holda elementlarni
+joylashtirishning oson usulini beruvchi texnologiya bu FlexBox dir.
+
+U ikki qismdan iborat: flex container va flex items.
+
+Flex Container 
+
+Flex kontener bu o'ziga display: flex; xususiyatini olgan element bo'lib 
+ichki elementlarni joylashuvini belgilash xususiyatiga egadir.
+.container {
+    display: flex;
+}
+
+Uning xususiyatlari mavjud:
+
+1. flex-direction - yunalishni belgilash.
+Qiymatlari:
+row - chapdan o'nga qarab  qator bo'lab
+row-reverse  -  ongdan chapga qarab qator bo'ylab
+column - yuqoridan pastga qarab ustun bo'yicha
+column-reverse  - pasdan yuqoriga qarab ustun bo'yicha.
+
+2. flex-wrap - bir qatorga sig'maganlarni 
+yangi qatorga tushirishni boshqarish
+Qiymatlari:
+wrap - yangi qatordan tushirish 
+nowrap - tushirmaslik
+wrap-reverse - tomonni teskari qilish
+
+3. justify-content - elemetlarni tekislash
+Qiymatlari:
+flex-start - boshidan(asosiy)
+center - markazdan
+flex-end - oxiridan
+space-between - ikki chekka elementlar chegaralarda o'rtadagilari
+esa masofani teng saqlagan holatda
+space-around - elementlarning boshi va oxiridan teng masofalar
+space-evenly - elementlar orasida bir xil masofa.
+
+4. align-items - Bu xususiyat justify-content ga teskari 
+yunalishda ishlaydi ya'nu gorizontal ishlaganda bu vertikaliga 
+ishlaydi va teskarisi.
+Qiymatlari:
+flex-start, center, flex-end
+
+5. flex-flow - bu flex-direction va flex-wrap ni bir qatorda 
+berish uchun ishlatiladi.
+Misol: 
+flex-flow: row wrap;
+
+6. align-content - align-items ga uxshaydi ammo qatorlar ko'p
+bo'lganda ularni bir joyga yig'ib turadi.

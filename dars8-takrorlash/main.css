@@ -1,0 +1,146 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+.header{
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.26)), url("./rasm/bosh.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.nav{
+    color: white;
+    padding: 10px 200px;
+    background-color: rgba(0, 0, 0, 0.294);
+}
+.logo{
+    float: left;
+    height: 90px;
+    width: 120px;
+    background-image: url('./rasm/logo.jpg');
+    background-size: 200%;
+    background-position: center;
+    
+}
+.menu {
+    display: inline-block;
+}
+.menu li {
+    display: inline-block;
+    margin: 10px 30px;
+}
+.menu li a{
+    font-size: 18px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+.ong{
+    display: inline-block;
+    color: white;
+}
+.ong a{
+    color: white;
+}
+
+.text1 {
+    height: 300px;
+    width: 600px;
+   color: white;
+    margin-top: 200px;
+    margin-left: 100px;
+
+}
+.text1 h1{
+    font-size: 48px;
+    padding: 2px 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text1 p{
+    letter-spacing: 10px;
+    font-size: 24px;
+}
+.line{
+    border-bottom: solid 4px white;
+    width: 60px;
+}
+.tugma{
+    background-color: rgb(219, 176, 97);
+    color: black;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0px;
+}
+.uchtalik{
+    margin-top: 90px;
+    padding: 0px 200px;
+    text-align: center;
+   
+}
+.uchtalik .bir, .uchtalik .ikki, .uchtalik .uch{
+    display: inline-block;
+    width: 25%;
+    margin: 10px 20px;
+    vertical-align: text-top;
+}
+.uchtalik .bir .icon{
+    font-size: 48px;
+    text-align: center;
+    color: rgb(214, 162, 65);
+}
+.bir p {
+    line-height: 30px;
+}
+.imc{
+    padding: 20px 200px;
+    margin-bottom: 400px;
+}
+
+.imc .bir{
+    float: left;
+    height: 500px;
+    background-image: url("./rasm/sar1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 240px;
+    box-sizing: border-box;
+
+}
+.imc .ikki {
+    float: right;
+    background-color: blue;
+    height: 500px;
+    width: 50%;
+}
+.imc .ikki .tepa{
+    width: 100%;
+    height: 300px;
+    background-image: url("./rasm/sar2.jpg");
+    background-size: cover;
+}
+.imc .ikki .past1, .imc .ikki .past2{
+    float: left;
+    width: 50%;
+  
+    height: 200px;
+}
+.imc .ikki .past1{
+    background-image: url("./rasm/sar3.jpg");
+    background-size: cover;
+}
+.imc .ikki .past2{
+    background-image: url("./rasm/sar4.jpg");
+    background-size: cover;
+}
+

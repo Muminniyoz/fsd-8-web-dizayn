@@ -1,0 +1,70 @@
+Positions - Joylashuv
+
+CSS yordamida eleemntlarni joylashtirish uchun 
+position xususiyatidan foydalaniladi.
+Qiymatlari:
+
+1. position: relative;
+
+Bu pozitsiyada element avval o'z o'rniga joylashadi so'ng 
+quyidagi 4 xususiyat yordamida boshqa halaqit
+ qilmasdan qo'zg'aladi.
+1) top - pastga qarab surish
+    top: 30px;
+2) left - o'ngga surish
+3) right - chapga
+4) bottom - tepaga
+
+positiondan foydalanilganda elementlar o'rtasida qavatlar
+paydo bo'ladi. Chunki ular bir birlarining ustiga chiqib 
+ketadi.
+CSS da qavatlarni boshqarish uchun z-index xususiyatidan
+foydalaniladi.
+Qiymati butun sonlardan iborat:
+Dastlab barcha elementlar 0-qavatda deb qaraladi.
+Misol:
+z-index: 3;
+z-index: -5;
+
+2. position: absolute;
+
+Bu pozitsiya relative bilan birga qo'llaniladi.
+Biror elementni boshqa elementning tomonlari bo'yicha 
+joylashtirishda kontainer relative bo'ladi, ichki joylashuvchi
+absolute bo'ladi va 4 ta xususiyat ishlay boshlaydi.
+top - kontainer tepa qismidan elementgacha masofa
+bottom - pastgi chegarasidan masofa
+left - chap chegarasidan
+right - o'ng
+
+<div class="container">
+    <div class="box">...</div>
+</div>
+.container{
+    position: relative;
+}
+.box{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+Bu box containerning quyi o'ng burchagiga joylashadi.
+
+3. position: fixed;
+
+Bu pozitsiya absolute ga o'xshab ketadi faqat endi element 
+brauzer bo'ylab joylashadi. skroll bo'lmaydi.
+top - brauzer tepa qismidan elementgacha masofa
+left - chapidan
+right - o'ngidan
+bottom - tagidan.
+
+
+4. position: sticky; 
+
+Dastlab o'z joylashib sahifa scroll bo'lganda bir ko'rsatilgan
+joyga kelgach fixed bo'lib qoluvchidir.
+top - brauzer tepa qismidan elementning to'xtash joyigacha masofa
+left - chapidan.
+right - o'ngidan 
+bottom - tagidan.

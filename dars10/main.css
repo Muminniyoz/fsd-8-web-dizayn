@@ -1,0 +1,20 @@
+.dropdown{
+    margin: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: aqua;
+    transition: all 1s;
+   
+    position: relative;
+}
+.dropdown .menu{
+    position: absolute;
+    display: none;
+    background-color: red;
+    padding: 10px 20px;
+    left: 0;
+    
+}
+.dropdown:hover .menu{
+    display: block;
+}

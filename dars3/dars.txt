@@ -1,0 +1,123 @@
+CSSga kirish
+
+CSS bu Cascading Style Sheet so'zlarining bosh harflaridan
+olinggan bo'lib <xususiyat>: <qiymat>; formatidagi elementlarga
+dizayn berish texnologiyasidir.
+
+HTML elementlarga CSS berish uchun 3 xil usul mavjud
+1) INLINE
+2) INTERNAL
+3) EXTERNAL
+
+INLINE usul
+
+Bu usulda CSS elementlarga style atributi orqali beriladi.
+Misol:
+<h1 style="CSS kod">...</h1>
+
+CSS xususiyatlar.
+
+
+1. color - matn rangi
+Qiymati: ingliz tilida rang nomlari
+Misol: 
+color: blue;
+
+2. background-color - orqa fon rangi
+Qiymati: ingliz tilida rang nomlari
+Misol:
+background-color: aqua;
+
+3. text-align - matnni tekislash
+Qiymatlari:
+left - chapga
+right - o'nga
+center - markazga
+justify - ikki tomonni tekislash
+Misol:
+text-align: center;
+
+4. text-decoration - matnga chiziqlar qo'yish
+Qiymatlari:
+underline - tag chiziq
+overline - tepa chiziq
+line-through  - o'rta chiziq
+none - chiziqni olib tashlash.
+
+5. text-transform - matni katta-kichik harflar yozish
+Qiymatlari:
+uppercase - bosh harflarda
+lowercase - kichik harflarda
+capitalize - so'zlar bosh harf bilan
+none - bekor qilish
+Misol:
+text-transform: uppercase;
+
+6. text-indent - xat boshi
+Qiymati: px yoki foizda
+Misol: 
+text-indent: 4px;
+
+7. font-size - shrift o'lchami
+Qiymati: px, foiz va h.k;
+Misol: 
+font-size: 24px;
+
+8. font-weight - shrift qalinligi
+Qiymatlari:
+100,200, ..., 900
+bold, normal, bolder,...
+
+9. font-style - Shrift shakli
+Qiymatlari:
+italic - qiya
+normal - normal 
+
+10. font-family - Shrift ko'rinishi
+Shrift 4 turga bo'linadi.
+1. serif - Bu turda harflar o'tkir uchlar ega bo'ladi.
+Times New Roman va h.k
+
+2. san-serif - (serif emas) Bu tekis shrift bo'lib uchlarga ega
+emas
+Arial va h.k
+
+3. monospace - Bu turda barcha belgilar bir xil kenglikda bo'ladi.
+Courer New va h.k
+
+4. fantasy - qalin ko'rinishdagi belgilar va bosh.
+
+Web sahifa brouzerlar aro foydalanuvchilarga ko'rinar ekan
+agar ko'rsatilgan shrift foydalanuvchi qurilmasida bo'lmasa
+sayt ko'rinishiga ta'sir qiladi. Shuning uchun birdaniga
+vergul bilan ketma bir nechta shrift berilad. 
+Agar birinchisini topolmasa ikkinchisini qo'yishga harakat qiladi.
+
+
+Google Font Family
+Google tomonidan ko'plab shriftlar ishlab chiqilgan bo'lib
+biz ularni o'z web sahifamizga qo'yishimiz mumkin.
+fonts.google.com saytidan shrift manzili sahifaning head 
+qismga qo'yiladi.
+
+
+CSS da display
+
+HTMLda elementlar joylashuviga ko'ra inline va block bo'ladi.
+
+block - elementlar har doim yangi qatordan boshlanib qator 
+oxirigacha egalik qiladi.
+
+inline - elementlar faqat o'z contentini o'rab turadi.
+qayerga qo'yilgan bo'lsa ketma ket joylashadi.
+
+block elementlar: h1-h6, p, hr, blockquote va h.k
+inline elementlar: b, i, sup, del va h.k
+
+Bu xususiyatni almashtirish uchun display foydalaniladi:
+Misol: 
+display: inline;
+display: block;
+
+
+

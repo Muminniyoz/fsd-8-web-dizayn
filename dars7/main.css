@@ -1,0 +1,21 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+.box{
+    background-color: aqua;
+    border: solid 9px red;
+    overflow: auto;
+}
+img{
+    float: left;
+}
+h1{
+    clear: both;
+}

@@ -1,0 +1,71 @@
+CSSda kombinatsiyalar
+
+1. ,(vergul) - birdaniga bir nechta elementga still berish
+h1, p{
+    ... h1 va p ga 
+}
+
+2.  (bo'sh joy) - ichki elementga stil berish 
+
+div h1 {
+    ... div ning ichidagi barcha h1 larga.
+}
+
+3. > (kichik) - faqat element ichida joylashgan bolalari 
+nevaralari emas.
+div > h1 {
+    ... div ning ichidagi bola h1 lar nevaralar emas.
+}
+4. + - biror elementdan keyin kelgan birinchi element.
+div + h1 {
+    ... div dan keyin kelgan birinchi h1.
+}
+5. ~ (tilda) - Biror lementdan keyin kelgan barcha elementlar
+div ~ h1 {
+    ... div dan keyin kelgan barcha h1 lar.
+}
+
+
+CSSda psuedo-klass lar.
+
+Psuedo klass bu biror elementga sichqoncha, tanlash kabi 
+hodisalar bo'lganda stil berish uchun ishlatiladi.
+Ular selectordan so'ng : bilan yoziladi.
+Misol:
+div:hover{
+    ... div ga sichqoncha ko'rsatgichi kelganda.
+}
+Ro'yxati:
+hover - sichqoncha ko'rsatgichining element ustiga kelishi
+active - sichqoncha tugmasining bosilishi
+focus - element tanlanishi, aktiv bo'lishi,
+checked - element belgilab qo'yilganda
+first-child - Bir nechta elementdan birinchisi
+last-child - bir nechta elementdan oxirgisi.
+nth-child(n) - Bir nechta elemementdan n-element.
+odd - toq, even - juft.
+va h.k.
+
+
+Psuedo element
+
+Psuedo element bu CSS orqali biror elementing qismlari 
+stil berish uchun ishlatiladi.
+Ular selectordan so'ng :: bilan yoziladi.
+Misol:
+div::first-letter{
+    ... div elementning yozuvlarining birinchi harfi.
+}
+
+Ro'yxati;
+first-letter - birinchi harf.
+first-line   - birinchi qator.
+selection    - tanlangan matn
+after        - elementdan keyin
+before       - elemementdan oldin.
+va h.k
+
+
+
+
+

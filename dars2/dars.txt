@@ -1,0 +1,78 @@
+title elementi
+
+head qismiga title elementi qo'yilib u sayting sarlavhasi
+bo'ladi. 
+<title>Menging saytim</title>
+
+Shu kungacha bir qancha HTML versiyasi kelib chiqqan bo'lib
+oxirgisi 5 - versiyadir.
+HTML hujjatni 5-versiyada ekanligini bildirish uchun
+kod boshiga <!DOCTYPE html> qatori qo'shiladi.
+
+
+HTMLda atributlar
+HTML elementga qo'shimcha xususiyatlar berish uchun 
+atributlardan foydalaniladi.
+U har doim ochiluvchi tegga yoziladi.
+Sintaksis
+<teg attr1="qiymat1" attr2="qiymat2" ...> ... </teg>
+Misol:
+<h1 style="color: red">Salom</h1>
+
+title - atributi barcha elementlarda bo'lib
+sichqoncha ustiga kelganda info chiqarish uchun ishlatiladi.
+<h1 title="Salomlashuv">Salom</h1>
+
+Qo'shtirnoqlar
+
+HTMLda matni qo'shtirnoqqa solish uchun <q>...</q> juft tegidan
+foydalaniladi.
+<q>Salom</q>
+
+Biror matn bo'lagini alohida ajratib ko'rsatish uchun 
+<blockquote> ... </blockquote> elementidan foydalanaladi.
+matni chapga suradi, tepa va pastdan masofa saqlaydi.
+
+
+Maxus belgilar.
+
+HTMLda klaviaturada mavjud bo'lmagan belgilarni qo'yish
+uchun &<belgi nomi>; belgilashdan foydalaniladi.
+Masalan:
+&nbsp; - bo'sh joy
+&copy; - Copyright
+&reg;  
+&lg; >
+Bundan tashqari simvollarning maxsus kodlari ham qo'yish mumkin
+&#<raqam>;
+Masalan:
+&#2343;
+
+
+HTMLga rasmlar qo'yish
+
+HTMLga rasm qo'yish uchun img toq tegidan foydalaniladi.
+Sintaksis:
+
+<img src="rasm manzili" width="eni" height="buyi" 
+alt="rasm nomi">
+
+Masalan:
+<img src="./rasm.jpg" widht="200" 
+                   height="100" alt="quyosh rasm">
+Havolalar
+
+Bir sahifadan boshqa sahiga o'tish uchun htmlda havolalardan
+foydalaniladi. Ular a juft tegi yaratiladi.
+Sintaksis:
+
+<a href="manzil">Nom</a>
+Misol:
+<a href="https://t.me/idrok_net_8">Bizning guruh</a>
+
+<a href="./aloqa.html">Aloqa bo'limi</a>
+
+
+<hr> - gorizontal chiziq qo'yish. 
+Havola manzili mavjud bo'lmasa # qo'yiladi
+Misol: <a href="#">Link</a>

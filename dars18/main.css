@@ -1,0 +1,198 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    border: solid 2px;
+    margin: 5px;
+    
+}
+header nav .tgm{
+    display: none;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 50%;
+    background-color: red;
+}
+main {
+    border: solid 2px;
+    margin: 5px;
+    background-color: rgb(127, 255, 170);
+    display: flex;
+    height: 300px;
+    
+}
+main > *{
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: blue;
+    margin: 10px;
+    font-size: 48px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .bir{
+    margin: 50px;
+}
+.uchtalik, .ikkitalik, footer{
+    border: solid 2px;
+    margin: 5px;
+    background-color: rgb(136, 158, 9);
+    display: flex;
+    height: 300px;
+    padding: 30px;
+}
+.uchtalik > *{
+    flex: 1 1;
+    margin: 10px;
+    background-color: aqua;
+    color: rgb(179, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+.ikkitalik{
+    background-color: purple;
+}
+.ikkitalik > *{
+  
+    margin: 10px;
+    background-color: rgb(30, 255, 0);
+    color: rgb(179, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+.ikkitalik > .bir{
+    flex: 6 1;
+}
+.ikkitalik > .ikki{
+    flex: 4 1;
+}
+
+footer > *{
+  
+    margin: 10px;
+    background-color: rgb(4, 0, 255);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+footer .bir, footer .turt{
+    flex: 15 1;
+}
+footer .ikki, footer .uch{
+    flex: 35 1;
+}
+
+
+/* Planshet  */
+@media screen and (max-width: 992px){
+    header {
+        padding: 10px 30px;
+    }
+    main .ikki{
+        display: none;
+    }
+    .uchtalik{
+        flex-wrap: wrap;
+    }
+    .uchtalik .uch{
+        flex-basis: 100%;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    footer .bir, footer .turt{
+        flex-basis: 25%;
+    }
+    footer .ikki, footer .uch{
+        flex-basis: 65%;
+    }
+
+}
+
+
+/* Telefon  */
+@media screen and (max-width: 576px){
+    header {
+        padding: 10px 10px;
+    }
+    header nav .tgm{
+        display: inline-block;
+    }
+    header nav .tgm:hover + ul {
+        display: inline-block;
+    }
+    nav{
+        position: relative;
+    }
+    header nav ul{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: aliceblue;
+    }
+    main{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 200px;
+
+    }
+    main .bir{
+        margin: 10px;
+        flex-basis: 100px;
+    }
+    .uchtalik{
+        padding: 2px;
+    }
+    .uchtalik > *{
+        flex-basis: 100%;
+        margin: 2px;
+    }
+    .ikkitalik{
+        flex-wrap: wrap;
+    }
+    .ikkitalik > *{
+        flex-basis: 100%!important;
+    }
+    footer{
+        padding: 2px;
+    }
+    footer .bir{
+        flex-basis: 40%;
+        order: 1;
+    }
+    footer .turt{
+        flex-basis: 40%;
+        order: 2;
+    }
+    footer .ikki{
+        flex-basis: 100%;
+        order: 3;
+    }
+    footer .uch{
+        flex-basis: 100%;
+        order: 4;
+    }
+    
+}

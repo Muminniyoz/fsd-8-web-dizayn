@@ -1,0 +1,10 @@
+.container{
+    background-color: aqua;
+    height: 300px;
+    overflow: auto;
+}
+.box{
+    margin-top: 90px;
+    opacity: 0.5;
+    background-color: rgba(255, 0, 0, 0.623);
+}

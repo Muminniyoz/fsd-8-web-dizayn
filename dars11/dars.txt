@@ -1,0 +1,86 @@
+HTMLda formalar.
+
+Foydalanuvchidan ma'lumtlarni so'rav ularni serverga 
+jo'natish uchun htmlda <form> ... </form> eleemntidan foydalaniladi.
+
+Atributlari:
+action="url" - forma ma'lumotlari manzil
+method="GET|POST" - http so'rov metodi.
+autocomplete="on|off" - avtomatik to'ldirish
+name="forma nomi" - forma uchun nom qo'yish
+va h.k
+
+Foydalanuvchi ma'lumotlarini kiritish uchun 
+forma elementlaridan foydalaniladi.
+Shulardan eng ko'p foydalaniladigani va universali <input type="tur">
+elementidir.
+Misol:
+<input type="text" name="ism" placeholder="Ism kiriting...">
+
+input elementining turlari:
+1. text - oddiy matn
+2. number - son
+3. password - parol
+4. email    - email
+5. checkbox  - ptichka
+6. radio  - bir nechtadan bittasini tanlash
+7. range - soha 0 dan 100 gacha
+8. button - tugma
+9. color - rang tanlash
+10. date  - sana
+11. datetime, datetime-local - sana va soat.
+12. file - fayl
+13. hidden - yashirin. ko'rinmay turadi.
+14. image - rasmli tugma
+15. month - oy
+16. reset - formani dastlabki holatga keltirish
+17. search - qidirish maydoni
+18. submit - ma'lumotlarni yuborish tugmasi
+19. tel - telefon
+20. url - url manzil kiritish
+21. week - hafta kuni.
+22. time - soat
+
+Forma elementlarini nomlash uchun name atriubutidan foydalaniladi.
+Misol:
+<input type="text" name="ism">
+
+Forma eleemntiga dastlabki qiymatni berish uchun value atriubutidan
+foydalaniladi.
+Misol:
+<input type="number" value="5">
+
+Biror maydonning majburiy ekanligi required atributi orqali beriladi.
+<input type="text" name="login" required>
+
+maxlength - maksimal belgilar
+minlength - minimal belgilar
+max - sonlar uchun eng katta qiymat
+min - sonlar uchun eng kichik qiymat
+readonly - faqat o'qish uchun.
+ Misol:
+<input type="text" name="login" readonly 
+                       required maxlength="5" minlength="3">
+
+Bir nechta qiymatdan birinini tanlash uchun <select >...</select> 
+elementidan foydalanidladi.
+Uning ichiga <option value="nom">matni </option> da variatnlar beriladi.
+Misol:
+Mamalakatingiz:
+<select name="mamlakat">
+    <option value="uzb">O'zbekiston</option>
+    <option value="kaz">Qozog'iston</option>
+    <option value="taj">Tojikiston</option>
+    <option value="tkm">Turkmaniston</option>
+</select>
+
+Forma elementlarga ko'rsatgich qo'yish uchun <label for="id">...</label>
+elementidan foydalanidladi. element id si bo'yicha ko'rsatadi.
+Misol:
+<label for="login">Loginni kiriting</label> <br>
+<input type="login" id="login" name="login">
+
+Tugma qo'yish uchun <button type="button">...</button> ishlatiladi.
+
+Ko'proq matn kiritish uchun <textarea>...</textarea> elementidan
+foydalanidladi.

@@ -1,0 +1,34 @@
+$asosiy-rang: red;
+
+.text{
+    color: $asosiy-rang;
+}
+
+.main{
+    background-color: $asosiy-rang;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+    & > div{
+        flex: 1 1 40%;
+    }
+    .logo{
+        background-color: red;
+    }
+    .box{
+              
+        &_bir{
+            color: red;
+        }
+        &_ikki{
+            color: blue;
+        }
+    }
+    
+}
+iframe{
+    width: 100%;
+    height: 80vh;
+}

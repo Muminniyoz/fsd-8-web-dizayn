@@ -1,0 +1,86 @@
+Bootstrap
+
+Bootstrap bu web sahifalar yaratish uchun eng ommobob framework 
+hisoblanadi. Bootstrap CSS va JavaScript kodlari to'plamidir.
+U orqali web sahiflar kam vaqtda yaratiladi.
+Uni o'rnatish uchun getbootstrap.com saytiga kiriladi va yuriq
+noma bo'yicha amallar bajariladi.
+
+Uni o'rnatishning ikki xil usuli mavjud
+
+1. online - CDN manzilni ko'rsatish
+2. offline - css va js kodlarni yuklab olish.
+
+
+Ikki usulning ham kamchiliklari va avfzalikklari bor.
+
+online - Bunda Bootstrap barcha uchun ochiq bo'lgan
+maxsus serverlarda saqlanadi. Bu serverlarda bir marta 
+yuklab olgan brauzer uni cachelab(eslab) qoladi.
+Bu Bootstrapda qilinggan saytlar tezda ochilishini 
+ta'minlaydi.
+Ammo lokal ishlaydigan paytda samarasizdir.
+
+
+offline - Bunda Bootstrap getbootstrap.com saytidan
+yuklab olinadi va css, js kodlar 
+sahifaga bog'lab qo'yiladi.
+
+
+
+
+Bootstrapda Kontenerlar
+Bootstrapda 2 xil Kontener qo'llaniladi
+1. container
+    Bu klass ekranning har xil razmerlariga moslashuvchandir
+    eng katta eni max-width: 1140px;
+2. container-fluid
+   Bu klass oddiy bulib faqat chap va o'ngdan ozroq paddingga ega
+
+
+border - klassi elementlarga border beradi
+border-top - topga
+.......
+rounded - burchagi qaytgan chegara
+
+
+Ranglar:
+primary - asosiy (ko'k)
+secondary - Ikkilamchi(kulrang)
+success - muvaffaqiyatli(yashil)
+danger - xafli (qizil)
+warning - ogohlantirish(sariq)
+info - ma'lumot (moviy)
+light - yorqin
+dark - qorong'u(qora)
+
+Yozuvlarga rang berish uchun text-<rang> yoziladi
+masalan: text-primary
+Orqa fonga rang berish uchun bg-<rang> yoziladi
+Masalan: bg-danger
+
+text-center - text-align: center;
+text-left   - text-align: left;
+
+
+Elementlarga display xususiyatini berish uchun
+d-<qiymat> shakldan foydalaniladi:
+d-inline    -> display: inline;
+
+Elementlarga margin berish uchun m-<1-5> ishlatiladi
+Masalan:
+m-5
+m-2
+mt-4 (margin-top: )
+mx-1 (margin: 0px 1.1rem)
+my-3 (margin: 1.2rem 0px)
+
+p-<1-5> - padding 
+Misol: p-3
+
+
+Komponentlar
+alert - ogohlantiruvchi quti
+btn - tugma
+card - shadowi bor quti
+form-control - forma elementi

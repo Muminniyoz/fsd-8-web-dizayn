@@ -1,0 +1,40 @@
+Bootstrapda moslashuvchan sahifalar.
+
+
+Bootstrapda sahifa bo'laklarni joylashtirish uchun Grid(setka)dan 
+foydalaniladi.
+Bunda row (qator) klassi ichida col (ustun) klasslari bo'ladi.
+Bootstrap Gridda sahifa kengligi 12 bo'lakka bo'lib olinadi va 
+shu buyicha taqsimlash bajariladi.
+
+Misol: 
+<div class="row">
+    <div class="col"> 1 </div>
+    <div class="col"> 2 </div>
+    <div class="col"> 3 </div>
+</div>
+Faqat col klassi yordamida bo'linish bajarilsa elementlar bir xil kenglikda
+joylashadi.
+
+Agar ustunlarni har xil nisbatda bo'lmoqchi bo'lsak col-<1-12> klasslardan 
+foydalaniladi. Bunda sonarl yig'indisi 12 ga teng bo'lishi zarur
+Misol: 
+
+<div class="row">
+    <div class="col-3"> 1 </div>
+    <div class="col-6"> 2 </div>
+    <div class="col-3"> 3 </div>
+</div>
+
+moslashuvchan classlar 
+Bootstrapda sahifa kengliklari o'z nomiga ega 
+1. [0px - 576px] - extra small
+2. [576px - 768px] - small     - sm 
+3. [768px - 992px] - medium    - md 
+4. [992px - 1200px] - large    - lg
+5. [1200px - *]     - extra large - xl 
+
+Bootstrapda ko'plab klasslarga uning ta'sir kengligi qo'shilish imkoniyati bor 
+Masalan: m-md-3 - margin ning medium kenglikda 3 birlik bo'lishidir.
+col-sm-9  - ustunning small kegglikda 9 birlik kenglikni olishi
+d-md-none - display medium kenglikda none bo'lishi 

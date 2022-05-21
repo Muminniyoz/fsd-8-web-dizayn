@@ -1,0 +1,86 @@
+ul{
+    text-align: center;
+}
+li{
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+     
+}
+
+li::after{
+    content: " ";
+    border: 3px blue solid;
+    background-color: red;
+    animation: aylan 3s infinite linear;
+    position: absolute;
+    border-radius: 10px;
+    width: 210px;
+    height: 50px;
+    left: -50px;
+    top: 30px;
+    z-index: 1;
+
+}
+
+li::before{
+    box-sizing: border-box;
+    content: "Bu o'zbek qizi";
+    color: white;
+    padding-top: 50px;
+    border: 3px blue solid;
+    background-image: url("./rasm.jpg") center cover;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    width: 95px;
+    height: 95px;
+    left: 2px;
+    top: 2px;
+    background-image: url("./rasm.jpg");
+    background-size: contain;
+}
+@keyframes aylan {
+    to{
+        transform: rotate(360deg);
+    }
+}
+a{
+    background-color: aqua;
+    border: solid 4px red;
+}
+a:hover{
+    outline: 3px solid red;
+}
+ul{
+    background-color: aqua;
+    height: 400px;
+    position: relative;
+}
+li:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+li:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+li:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+li:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

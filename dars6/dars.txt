@@ -1,0 +1,138 @@
+HTML RO'YXATLAR
+
+HTMLga ro'yxat qo'yishning 3 xil ko'rinishi mavjud
+Bular
+Tartiblan ro'yxat, Tartiblanmagan ro'yxat va Tavsifli ro'yxat.
+
+HTMLga tartiblanga ro'yxat qo'yish uchun <ol> ... </ol>
+elementidan foydalaniladi.(ordered list)
+
+Uning ichiga <li> ... </li> bilan ma'lumotlar yoziladi.
+(list item)
+Misol: Oshga massaliq
+<ol>
+    <li>Guruch</li>
+    <li>Yog'</li>
+    <li>Piyoz</li>
+    <li>Sabzi</li>
+    <li>Gusht</li>
+</ol>
+
+type nomli atributi orqali sanoq turini berish mumkin
+1. type="1" - sonlar
+2. type="A" - katta lotin harflar
+3. type="a" - kichik lotin harflari
+4. type="I" - katta rim raqamlar
+5. type="i" - kichik rim raqamlari
+
+Misol:
+<ol type="A"> ... </ol>
+
+start atributi orqali sanoq boshini berish mumkin
+Misol:
+<ol start="100"> ...</ol>
+
+
+HTMLga tartiblanmagan ro'xat qo'yish uchun <ul> ... </ul>
+elementidan foydalaniladi.(unordered list)
+Ichiga li lar qo'yiladi.
+Misol:
+<ul>
+    <li>Anor</li>
+    <li>Banan</li>
+    <li>Uzum<li>
+</ul>
+
+Belgicha shaklini o'zgartirish uchun CSSda list-style 
+xususiyati ishlatiladi.
+Qiymatlari:
+circle - aylana
+disc - doira 
+va h.k
+
+
+HTML tavsifli ro'yxat qo'yish uchun <dl> ... </dl>
+elementidan foydalaniladi.
+Tavsif nomi: <dt> ... </dt> da
+Ichki qiymatlar: <dd> ... </dd> da bo'ladi.
+Misol:
+<dl>
+    <dt>Web site</dt>
+        <dd>html</dd>
+        <dd>css</dd>
+        <dd>javascript</dd>
+    <dt>Mobile</dt>
+        <dd>Android</dd>
+        <dd>iOS</dd>
+</dl>
+
+
+HTML JADVALLAR
+
+Jadval - bu ustun va qatorlardan iborat bo'lgan 
+ma'lumotlar tuzilmasi.
+
+HTMLda Jadval qo'yish uchun <table> ... </table>
+elementidan foydalaniladi.
+U 2 ta qismdan iborat.
+<thead>...</thead> - sarlavha
+<tbody>...</tbody> - tana
+
+Sarlavhada ustun nomlar bo'ladi.
+Tana qismda ma'lumotlar.
+Misol:
+<table>
+    <thead>
+        ...
+    </thead>
+    <tbody>
+        ...
+    </tbody>
+</table>
+
+
+HTMLdagi jadval qator va uning ichidagi kataklardan iborat.
+Qatorlar <tr> ... </tr>(table row) elementi bilan ochiladi.
+Kataklar esa sarlavhada <th> ... </th> bilan
+tana qismda <td> ... </td> bilan.
+
+Misol:
+
+<table>
+    <thead>
+        <tr>
+            <th>Ism</th>
+            <th>Familiya</th>
+            <th>Telefon</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Ahad</td>
+            <td>Qayum</td>
+            <td>30Z777ZZ</td>
+        </tr>
+        <tr>
+            <td>Alisher</td>
+            <td>Qodirov</td>
+            <td>998997777777</td>
+        </tr>
+    </tbody>
+</table>
+
+Jadvalga chiziqlar qo'yish uchun th va td elementlarga 
+border xususiyat beriladi.
+
+Bu holatda kataklar chiziqlari alohida bo'lib qoladi.
+Ikkita ketma-ket kelgan katak chiziqlarni birlashtirish
+uchun table ga border-collapse: collapse; xususiyat
+berilishi kerak.
+
+Boror katakni bir nechta katak kengligicha kenglik berish 
+ushun colspan atributidan foydalaniladi.
+Bir nechta katak buyini berish uchun rowspan atributi
+ishlatiladi.
+Misol:
+<th rowspan="2" colspan="2">...</th>
+

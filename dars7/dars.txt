@@ -1,0 +1,61 @@
+CSS da overflow
+
+HTML elementga ichki content sig'may qolganda uning qanday
+ko'rinishda bo'lishini boshqarish uchun css da overflow
+xususiyatidan foydalaniladi.
+
+Qiymatlari:
+1. visible - sig'magan content ko'rinib turadi(odatdagi)
+overflow: visible;
+2. hidden - sig'magan content ko'rinmaydi
+3. scroll - elementning ikki tomoniga surgichlar qo'yiladi.
+4. auto  - surgichlar qachonki kerak bo'lganda qo'yiladi
+Elementning aynan biror tomoniga ishlov verish uchun 
+overflow-x gorizontal va overflow-y  vertikaliga ishlatiladi.
+
+
+Minimal va maksimal o'lcham
+max-widht - eng katta kenglik
+max-height - eng katta bo'y
+min-widht - eng kichik kenglik
+min-height - eng kichik bo'y
+
+Ko'p tavsifaya etiladiga CSS
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+Float
+
+HTML da elementlar chap yuqori burchakdan ketma ketma joylashadi
+va sig'maganlari yangi qatordan tushadi. Bu standart.
+Buylari farq elementlar asosan taglari bir tekislikda bo'ladi.
+Agar biror elementlarni o'z qatorida chapga yoki o'ng tomonga
+halqib chiqartirish uchun float xususiyati ishlatiladi.
+
+Qiymatlari:
+1. float: left; - element o'zini o'z qatoringing chap yuqori 
+burchagiga tashlaydi
+2. float: right; - o'zi o'z qatorining o'ng yuqori 
+burchakiga qarab tashlaydi.
+3. float: none; - floatni bekor qilish.
+
+float xususiyatini olgan elementdan keying kelgan elementlar
+chekka tomonlar tugashini bilmay qoladi.
+Buni to'g'irlash uchun CSS da clear xususiyati ishlatiladi.
+Qiymatlari:
+clear: left; - chapdan
+clear: right; - o'ngdan
+clear: both; - ikki tomondan
+
+Yana bir muammo bo'lib float xususiyatini olgan element saqlovchi
+kontener o'z tugash hududini anglay olmaydi.
+Bunday holda usha kontenerga overflow: auto; berish kerak.

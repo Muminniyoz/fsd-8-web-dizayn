@@ -1,0 +1,11 @@
+Material Design 
+
+Material Design bu Google tomonidan tashkil qilingan
+elemtnlar dizaynidir. Hozirgi kunda deyarli barcha 
+texnologiyalar(Android, Desktop, web, ...)da Material Design mavjud.
+
+Web saytlarga uning turli kutubxonalar mavjud. Shulardan biri 
+materializecss.com dir.
+
+
+

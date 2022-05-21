@@ -1,0 +1,111 @@
+Transformlar
+
+CSS da elementlarni boshqa elementlarga ta'sir qilmagan holda shaklini
+o'zgartirish uchun transform xususiyatidan foydalaniladi.
+
+Qiymatlari.
+
+1. transform: translate(x, y);
+Elementi gorizontaliga x va vertikaliga y ga surish
+Misol:
+transform: translate(200px, -90px);
+Elementi 200px chapga 90 px yuqoriga
+
+2. transform: rotate(<x>deg);
+Elementi x gradiusga aylantirish
+Misol:
+transform: rotate(30deg);
+
+3. transform: scale(x) yoki scale(x, y);
+Elementni x marta hajmini o'zgartirish yoki 
+gorizontaliga x va vertikaliga y ga o'zgartirish.
+Misol:
+transform: scale(2); elementni 2 marta kattalashtirish
+transform: scale(0.5); elementni 2 marta kichiklashtirish
+
+4. transform: skew(x) yoki skew(x, y);
+Elementi og'dirish(qiyshaytirish, cho'zish)
+gorizontaliga x va vertikaliga y 
+transform: skew(40deg, 20deg);
+transform: skew(30deg);
+
+Bir vaqtning o'zida bir nechta qiymat berish mumkin 
+buning uchun ular bo'sh joy bilan ajratiladi.
+Misol: 
+transform: scale(1.4) rotate(30deg);
+
+Ayrim transform qiymatlar 3-o'lchovi holatga ham ishlaydi
+Misol:
+transform: rotateX(30deg) rotateY(80deg);
+Bunda ta'sir berilgan o'q bo'yicha bo'ladi.
+
+CSS da animatsiyalar
+
+Animatsiya bu biror vaqt davomida element xususiyatlarining sekinlik 
+bilan almashinuvidir.
+Elementga animatsiya berish uchun avvalo
+o'zgarishlar xaritasi @keyframes tuziladi.
+@keyframes ni ikki xil usulda tuzish mumkin.
+
+1. from-to usuli
+Bu usulda animatsiya boshlang'ich holati va tugash xolati tasvirlandi
+Sintaksis:
+@keyframes <xarita nomi>{
+    from{
+        <boshlang'ich css kodlar>
+    }
+    to {
+        <tugash css kodlar>
+    }
+}
+Misol:
+@keyframes aylanay{
+    from{
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+2. foizda
+Bu usulda animatsiya vaqt oralig'i foiz kursatgichlarda taqsimlanadi
+@keyframes qimirlash{
+    0%{
+        transform: translate(0px, 80px);
+    }
+    25% {
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, -80px);
+    }
+    75%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+Elementga animatsiya berish uchun animation xususiyatidan foydalaniladi
+Uning turli xil xususiyatlari bor.
+1. animation-name - keyframes ning nomi
+2. animation-duration - animation davomiylig
+3. animation-delay - animation boshlanishidan oldin kechiktirish
+4. animation-interation-count - animatsiya takrorlanishlar soni.
+5. animation-timing-function  - animatiya borish holati.
+6. animation-direction - animation yunalishi
+7. animation-fill-mode  - animation tugallash holati.
+Bularni barini bitta animation xususiyatida bo'sh joylar bilan berish 
+mumkin.
+Misol: 
+animation: aylanay 1s infinity;
+
+
+opacity - shafoflik
+Qiymati: 0 da 1 gacha oraqliqdagi son.
+Misol: opacity: 0.3;
+
+
+
